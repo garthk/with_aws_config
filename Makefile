@@ -1,4 +1,4 @@
-.PHONY: build clean publish lint
+.PHONY: build clean publish lint preview
 
 build:
 	python setup.py sdist
@@ -11,3 +11,11 @@ publish: clean build
 
 lint:
 	pylint *.py
+
+dist/README.html: README.rst
+	# requires pip install docutils
+	mkdir -p dist
+	python setup.py --long-description | rst2html.py > dist/README.html
+
+preview: dist/README.html
+	open dist/README.html
