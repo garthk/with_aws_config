@@ -7,6 +7,14 @@ Set AWS `environment variables`_ from the configuration files maintained by
 
 .. _aws configure: http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html
 
+------------
+Installation
+------------
+
+* ``pip install with_aws_config``
+* ``pip show with-aws-config -f``
+* Ensure ``with-aws-config`` is on your ``PATH``
+
 -----
 Usage
 -----
