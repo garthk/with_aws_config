@@ -7,6 +7,7 @@ clean:
 	rm -rf MANIFEST dist *.pyc
 
 publish: clean build
+	# requires pip install twine
 	twine upload dist/with_aws_config-*.tar.gz
 
 lint:
