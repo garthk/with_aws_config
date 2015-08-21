@@ -6,7 +6,7 @@ from distutils.core import setup
 
 setup(
     name='with_aws_config',
-    version='1.0.2',
+    version='1.0.3',
     description='Set AWS envars from `aws configure`, then run a command.',
     long_description=file('README.rst').read(),
     author='Garth Kidd',
