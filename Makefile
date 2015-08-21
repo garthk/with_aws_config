@@ -4,7 +4,7 @@ build:
 	python setup.py sdist
 
 clean:
-	rm -f MANIFEST dist/* *.pyc
+	rm -rf MANIFEST dist *.pyc
 
 publish: clean build
 	twine upload dist/with_aws_config-*.tar.gz
